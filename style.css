@@ -14,7 +14,6 @@ p {
 }
 
 .container {
-    /* width: 650px; */
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.35);
@@ -47,7 +46,8 @@ h2 {
 
 .bottom-container {
     height: 55%;
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
     color: white;
 }
 
@@ -95,7 +95,9 @@ h2 {
 }
 
 button:hover {
-    background-color: hsl(71, 55%, 77%);
+    background-color: hsl(71, 73%, 44%);
+    box-shadow: none;
+    /* text-shadow: 1px 1px 2px rgb(56, 75, 31); */
 }
 
 .bottom-right {
@@ -111,12 +113,11 @@ button:hover {
     color: hsl(204, 43%, 93%);
     font-size: 14px;
     margin-bottom: 4px;
-
 }
 
-@media (min-width:630px) {
-    .container{
-        width:600px;
+@media (min-width:700px) {
+    .container {
+        width: 600px;
     }
 
     .bottom-left,
@@ -126,5 +127,6 @@ button:hover {
 
     .bottom-container {
         display: flex;
+        flex-direction: row;
     }
 }
